@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Bellarmine Unit Converter</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Bellarmine Unit Converter</h2>
+        <p>Enter the value to convert:</p>
+
+        <label>
+            <input type="number" id="inputValue" placeholder="Enter value" />
+        </label>
+
+        <label>
+            <p>Unit to Convert:</p>
+            <input type="radio" name="conversionType" value="metersToFeet" checked /> Meters to Feet
+            <input type="radio" name="conversionType" value="feetToMeters" /> Feet to Meters
+        </label>
+
+        <label>
+            <input type="radio" name="conversionType" value="kilometersToMiles" /> Kilometers to Miles
+            <input type="radio" name="conversionType" value="milesToKilometers" /> Miles to Kilometers
+        </label>
+
+        <label>
+            <input type="radio" name="conversionType" value="celsiusToFahrenheit" /> Celsius to Fahrenheit
+            <input type="radio" name="conversionType" value="fahrenheitToCelsius" /> Fahrenheit to Celsius
+        </label>
+
+        <label>
+            <input type="radio" name="conversionType" value="kilogramToPounds" /> Kilogram to Pounds
+            <input type="radio" name="conversionType" value="poundsToKilogram" /> Pounds to Kilogram
+        </label>
+
+        <label>
+            <input type="radio" name="conversionType" value="gramsToOunces" /> Grams to Ounces
+            <input type="radio" name="conversionType" value="ouncesToGrams" /> Ounces to Grams
+        </label>
+
+        <button onclick="convert()">Convert</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
